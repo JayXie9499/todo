@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="./index.css" />
+		<meta
+			http-equiv="Content-Security-Policy"
+			content="default-src 'self'; script-src 'self' 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; style-src 'self' https://fonts.googleapis.com"
+		/>
+		<meta
+			http-equiv="X-Content-Security-Policy"
+			content="default-src 'self'; script-src 'self'"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<title>TODO</title>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="window-ctrl">
+				<div id="minimize">－</div>
+
+				<div id="close">✕</div>
+			</div>
+
+			<header>
+				<div class="button" id="open-project">Open Project</div>
+
+				<div class="button" id="save">Save</div>
+			</header>
+
+			<div class="main">
+				<div class="task-container">
+					<div class="title">Listed</div>
+
+					<ul class="task-list" id="listed"></ul>
+				</div>
+
+				<div class="task-container">
+					<div class="title">Complete</div>
+
+					<ul class="task-list" id="completed"></ul>
+				</div>
+			</div>
+
+			<footer>
+				<div class="button" id="new-task">New Task</div>
+
+				<div class="button" id="del-task">Delete</div>
+
+				<div class="button" id="complete-task">Complete</div>
+			</footer>
+		</div>
+	</body>
+
+	<script src="./index.js"></script>
+</html>

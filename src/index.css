@@ -1,0 +1,146 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	background: rgb(35, 35, 35);
+	font-family: "Noto Sans", "Noto Sans TC", sans-serif;
+}
+
+.container {
+	height: 100%;
+	width: 100%;
+}
+
+.window-ctrl {
+	height: 25px;
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	background: rgb(15, 15, 15);
+	-webkit-app-region: drag;
+}
+
+.window-ctrl > div {
+	cursor: pointer;
+	padding: 0 4px;
+	width: 30px;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	user-select: none;
+	-webkit-app-region: no-drag;
+}
+
+.window-ctrl > #minimize:hover {
+	background: rgb(50, 50, 50);
+}
+
+.window-ctrl > #close:hover {
+	background: rgba(255, 20, 20, 50);
+}
+
+header,
+footer {
+	padding: 10px 0;
+	height: 80px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 40px;
+}
+
+#open-project,
+#save {
+	background: rgb(0, 105, 167);
+}
+
+.main {
+	height: 600px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#new-task,
+#del-task,
+#complete-task {
+	background: rgb(0, 147, 120);
+}
+
+.button {
+	cursor: pointer;
+	height: fit-content;
+	width: fit-content;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
+	padding: 15px 18px;
+	color: #fff;
+	font-size: 2.5vh;
+	font-weight: 600;
+	filter: drop-shadow(0 0.8vh 1.2vh rgba(0, 0, 0, 30%))
+		drop-shadow(0 0.4vh 0.4vh rgba(0, 0, 0, 45%));
+}
+
+.task-container {
+	height: 100%;
+	width: 350px;
+	background: rgb(70, 70, 70);
+	border-radius: 25px;
+}
+
+.task-container > .title {
+	width: 100%;
+	height: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgb(55, 55, 55);
+	border-radius: 25px 25px 0 0;
+	color: #fff;
+	font-size: 25px;
+	font-weight: 400;
+}
+
+.task-container > ul {
+	margin: 0;
+	padding: 0;
+	height: calc(100% - 35px);
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	border-radius: 0 0 25px 25px;
+	list-style: none;
+	gap: 5px;
+}
+
+li {
+	height: 15%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	background: rgba(0, 0, 0, 35%);
+	border-radius: 20px;
+}
+
+li > input {
+	margin: 0 20px;
+	height: 15px;
+	width: 15px;
+}
+
+li > span {
+	width: 295px;
+	color: #fff;
+	font-size: 20px;
+}
+
+::-webkit-scrollbar {
+	width: 0;
+}

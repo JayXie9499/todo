@@ -1,0 +1,36 @@
+{
+	"name": "todo",
+	"version": "1.0.0",
+	"author": "Jay",
+	"license": "MIT",
+	"main": "src/main.js",
+	"scripts": {
+		"start": "electron-forge start",
+		"package": "electron-forge package",
+		"make": "electron-forge make"
+	},
+	"devDependencies": {
+		"@electron-forge/cli": "^7.4.0",
+		"@electron-forge/maker-squirrel": "^7.4.0",
+		"@eslint/js": "^9.7.0",
+		"electron": "^31.2.0",
+		"eslint": "9.x",
+		"globals": "^15.8.0",
+		"prettier": "^3.3.2"
+	},
+	"config": {
+		"forge": {
+			"makers": [
+				{
+					"name": "@electron-forge/maker-squirrel",
+					"config": {
+						"description": "A simple todo list app."
+					}
+				}
+			]
+		}
+	},
+	"dependencies": {
+		"@electron/remote": "^2.1.2"
+	}
+}
