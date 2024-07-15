@@ -109,18 +109,18 @@ footer {
 }
 
 .task-container > ul {
+	overflow: auto;
 	margin: 0;
 	padding: 0;
 	height: calc(100% - 35px);
-	display: flex;
-	flex-direction: column;
+	display: block;
 	width: 100%;
 	border-radius: 0 0 25px 25px;
 	list-style: none;
-	gap: 5px;
 }
 
 li {
+	margin: 3.5px 0;
 	height: 15%;
 	width: 100%;
 	display: flex;
